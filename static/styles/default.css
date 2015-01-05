@@ -1,0 +1,69 @@
+body,html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body *{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+main{
+    height:100%;
+    margin-top: -60px;
+    padding-top: 60px;
+    width:100%;
+}
+main>div{
+    float:left;
+}
+menu{
+    display: table;
+    left: 200px;
+    padding-left: 0;
+    position: absolute;
+    top: 0;
+}
+menu li{
+    display: table-cell;
+}
+menu li a{
+    color: darkgray;
+    display: block;
+    font-family: Verdana, Tahoma;
+    padding: 4px 10px;
+    text-decoration: none;
+}
+menu li a:hover{
+    background-color: #ddd;
+    color:#333;
+}
+nav{
+    background-color: #333;
+    color: azure;
+    height: 60px;
+    position: relative;
+}
+nav, #left-menu, #contents{
+    padding: 20px;
+}
+#contents{
+    padding-left: 220px;
+    width: 100%;
+}
+#left-menu, #contents{
+    height:100%;
+}
+#left-menu{
+    border-right: solid #333;
+    margin-right: -200px;
+    width: 200px;
+}
+#logo{
+    color: lightgrey;
+    float: left;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+    display: table;
+    text-decoration: none;
+}
