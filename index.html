@@ -9,15 +9,20 @@
 <nav>
 	<a href="/" id="logo">EduService</a>
 	<menu>
-		<li><a href="#">Обучение</a></li>
-		<li><a href="#">Персоналии</a></li>
-		<li><a href="#">Хрестоматия</a></li>
-		<li><a href="#">Контроль</a></li>
+		<li><a href="#" target="contents-area">Обучение</a></li>
+		<li><a href="#" target="contents-area">Персоналии</a></li>
+		<li><a href="#" target="contents-area">Хрестоматия</a></li>
+		<li><a href="#" target="contents-area">Контроль</a></li>
 	</menu>
 </nav>
-<main>
-    <div id="left-menu">Left menu</div>
-    <div id="contents">iFrame</div>
-</main>    
+<div id="left-menu">
+	<section><a href="#" target="contents-area">Астробиология</a></section>
+	<section><a href="#" target="contents-area">Астрофизика</a></section>
+	<section><a href="#" target="contents-area">Астрохимия</a></section>
+	<section><a href="#" target="contents-area">Астрология ☺</a></section>
+</div>
+<div id="contents">
+	<iframe frameborder="0" src="contents/default.html" name="contents-area" frameborder="0"></iframe>
+</div>
 </body>
 </html>

@@ -1,24 +1,23 @@
+a{
+    text-decoration: none;
+}
 body,html{
     height: 100%;
     margin: 0;
+    overflow: hidden;
     padding: 0;
 }
 body *{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-main{
-    height:100%;
-    margin-top: -60px;
-    padding-top: 60px;
-    width:100%;
-}
-main>div{
-    float:left;
+iframe{
+    height: 100%;
+    width: 100%;
 }
 menu{
     display: table;
-    left: 200px;
+    left: 210px;
     padding-left: 0;
     position: absolute;
     top: 0;
@@ -31,7 +30,6 @@ menu li a{
     display: block;
     font-family: Verdana, Tahoma;
     padding: 4px 10px;
-    text-decoration: none;
 }
 menu li a:hover{
     background-color: #ddd;
@@ -46,17 +44,35 @@ nav{
 nav, #left-menu, #contents{
     padding: 20px;
 }
+section a:hover{
+    background-color: #ccc;
+    color: black;
+}
 #contents{
-    padding-left: 220px;
-    width: 100%;
+    left: 210px;
+    right: 0;
+    padding-bottom: 0;
 }
 #left-menu, #contents{
-    height:100%;
+    bottom: 0;
+    position: absolute;
+    top:60px;
+    z-index: 2;
 }
 #left-menu{
     border-right: solid #333;
-    margin-right: -200px;
-    width: 200px;
+    left: 0;
+    width: 210px;
+    overflow: auto;
+}
+#left-menu section{
+    border:solid #ccc;
+    margin-bottom: 10px;
+}
+#left-menu a{
+    display: block;
+    height: 100%;
+    padding: 20px;
 }
 #logo{
     color: lightgrey;
@@ -65,5 +81,4 @@ nav, #left-menu, #contents{
     font-family: Arial;
     font-weight: bold;
     display: table;
-    text-decoration: none;
 }
