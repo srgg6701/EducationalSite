@@ -12,7 +12,7 @@
 	padding-bottom:1%;
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-style:normal;
-	font-size:20px;
+	font-size:18px;
 	color:#812;
 }
 .head_1 
@@ -66,4 +66,26 @@ table
 td 
 {
 	color:#660033;
+}
+select 
+{
+	margin-left: 25px;
+	margin-top: 25px;
+	font-size:16px;
+	font-size:18px;
+}
+input 
+{
+	font-size:16px;
+	font-family:"Palatino Linotype", cursive;
+	margin-left: 2%;
+}
+button 
+{
+	margin-top: 67px;
+	margin-left: 2%;
+	width: 104px;
+	height: 45px;
+	background-color:#FCC;
+	font-family:"Arial Black", Gadget, sans-serif;
 }
