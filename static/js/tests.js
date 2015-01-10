@@ -53,6 +53,14 @@ function checkSelects(){
     buildResults(answers,errors);
 }
 /**
+ * Проверить радиокнопки
+ */
+function checkRadios(){
+    var answer = $.trim($('label').has('input[type="radio"][value="true"]').text()),
+        errors = !$('input[type="radio"][value="true"]:checked').length;
+    buildResults([answer],errors);
+}
+/**
  * Проверить ответ (текстовое поле)
  */
 function checkFieldValue(value){

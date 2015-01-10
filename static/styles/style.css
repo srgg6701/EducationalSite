@@ -73,7 +73,7 @@ select
 	font-size:16px;
 	font-size:18px;
 }
-input 
+input:not([type="radio"]):not([type="checkbox"])
 {
 	font-size:16px;
 	font-family:"Palatino Linotype", cursive;
@@ -101,6 +101,11 @@ button
 .correct{
 	color:green;
 	background-color: lavender;
+}
+label{
+	display: table;
+	padding: 4px 20px;
+	white-space: nowrap;
 }
 .pseudolink{
 	color:blue; cursor:pointer
