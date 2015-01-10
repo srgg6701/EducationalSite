@@ -9,14 +9,22 @@
 </head>
 <body>
 <h3>Выберите ответы:</h3>
-<div class="maintext">При создании статической страницы, в отличие от динамической, <strong>не</strong> используются:</div>
-<ul>
-<li> <input type="checkbox" />Язык SQL</li>
-<li> <input type="checkbox" />Язык CSS</li>
-<li> <input type="checkbox" />Язык PHP</li>
-<li> <input type="checkbox" />Язык Java</li>
-<li> <input type="checkbox" />Язык HTML</li>
-</ul>
-<button>Проверить</button>
+<div class="maintext">При создании статической страницы, в отличие от динамической, <strong>не</strong> обрабатывается код, написанный на языке:</div>
+    <label>
+        <input type="checkbox" value="true" />SQL
+    </label>
+    <label>
+        <input type="checkbox" value="false" />CSS
+    </label>
+    <label>
+        <input type="checkbox" value="true" />PHP
+    </label>
+    <label>
+        <input type="checkbox" value="true" />Java
+    </label>
+    <label>
+        <input type="checkbox" value="false" />HTML
+    </label>
+<button class="check" type="button" onclick="checkCheckBoxses()">Проверить</button>
 </body>
 </html>

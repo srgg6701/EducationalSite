@@ -61,6 +61,18 @@ function checkRadios(){
     buildResults([answer],errors);
 }
 /**
+ * Проверить чекбоксы
+ */
+function checkCheckBoxses(){
+    var answers=[],
+        trues=$('label').has('input[type="checkbox"][value="true"]');
+    $(trues).each(function(index,element){
+        answers.push($.trim($(element).text()));
+    });
+    // построить блок с результатами
+    buildResults(answers,trues.length!=$(trues).has(':checked').length);
+}
+/**
  * Проверить ответ (текстовое поле)
  */
 function checkFieldValue(value){
