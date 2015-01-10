@@ -88,3 +88,31 @@ button
 	background-color:#FCC;
 	font-family:"Arial Black", Gadget, sans-serif;
 }
+.box, .correct, .wrong{
+	padding:20px;
+}
+.correct,.wrong{
+	border-radius:4px;
+	display: table;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-left: 27px;
+}
+.correct{
+	color:green;
+	background-color: lavender;
+}
+.pseudolink{
+	color:blue; cursor:pointer
+}
+#right-results{
+	background-color: #E6E6FA;
+	display: table;
+	margin-top: 10px;
+}
+.test-red{
+	color: red;
+}
+.wrong{
+	background-color: pink;
+}

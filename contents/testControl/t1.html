@@ -1,47 +1,33 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Документ без названия</title>
-<link href="../../static/styles/style.css" rel="stylesheet" type="text/css" />
-<script src="../../static/js/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Документ без названия</title>
+    <link href="../../static/styles/style.css" rel="stylesheet" type="text/css"/>
+    <script src="../../static/js/jquery.min.js"></script>
+    <script src="../../static/js/tests.js"></script>
 </head>
 <body>
 <h3>Сопоставьте:</h3>
-<form>
-<div class="maintext">Достоинство визуальных редакторов
-<select name="quality_of_redactors">
-<option>неоптимизированный код
-<option>необходимость знания языка гипертекстовой разметки
-<option>простота в использовании
-<option>проверка корректности кода и ссылок
-</select> 
-</div>
-<div class="maintext">Недостаток визуальных редакторов 
-<select name="quality_of_redactors">
-<option>неоптимизированный код
-<option>необходимость знания языка гипертекстовой разметки
-<option>простота в использовании
-<option>проверка корректности кода и ссылок
-</select> 
-</div>
-<div class="maintext">Достоинство невизуальных редакторов 
-<select name="quality_of_redactors">
-<option>неоптимизированный код
-<option>необходимость знания языка гипертекстовой разметки
-<option>простота в использовании
-<option>проверка корректности кода и ссылок
-</select> 
-</div>
-<div class="maintext">Недостаток невизуальных редакторов
-<select name="quality_of_redactors">
-<option>неоптимизированный код
-<option>необходимость знания языка гипертекстовой разметки
-<option>простота в использовании
-<option>проверка корректности кода и ссылок
-</select> 
-</div>
-<button>Проверить</button>
-</form>
+    <div class="maintext">Достоинство визуальных редакторов
+        <select name="wyswyg-advantages">
+            <option value="select">-Выберите вариaнт ответа-</option>
+            <option value="false">неоптимизированный код</option>
+            <option value="false">необходимость знания языка гипертекстовой разметки</option>
+            <option value="true">простота в использовании</option>
+            <option value="false">проверка корректности кода и ссылок</option>
+        </select>
+    </div>
+    <div class="maintext">Недостаток визуальных редакторов
+        <select name="wyswyg-drawbacks">
+            <option value="select">-Выберите вариaнт ответа-</option>
+            <option value="true">неоптимизированный код</option>
+            <option value="false">необходимость знания языка гипертекстовой разметки</option>
+            <option value="false">простота в использовании</option>
+            <option value="false">проверка корректности кода и ссылок</option>
+        </select>
+    </div>
+    <button class="check" type="button">Проверить</button>
 </body>
 </html>
