@@ -19,14 +19,14 @@ function main(argv) {
         'HEAD':createServlet(StaticServlet)
     }).start(Number(argv[2]) || DEFAULT_PORT);
 }
-
+//
 function escapeHtml(value) {
     return value.toString().
         replace('<', '&lt;').
         replace('>', '&gt;').
         replace('"', '&quot;');
 }
-
+//
 function createServlet(Class) {
     var servlet = new Class();
     return servlet.handleRequest.bind(servlet);
