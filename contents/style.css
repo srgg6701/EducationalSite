@@ -88,3 +88,13 @@ button
 	background-color:#FCC;
 	font-family:"Arial Black", Gadget, sans-serif;
 }
+.next_task 
+{
+	font-size:18px;
+	font-family:"Lucida Console", Monaco, monospace;
+	margin-top:33px;
+	margin-bottom: auto;
+	height: 45px;
+	width: 66px;
+	background-color:#9FC;
+}

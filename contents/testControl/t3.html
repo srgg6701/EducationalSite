@@ -6,13 +6,18 @@
     <link href="../../static/styles/style.css" rel="stylesheet" type="text/css" />
     <script src="../../static/js/jquery.min.js"></script>
     <script src="../../static/js/tests.js"></script>
+<link href="../style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 <h3>Закончите фразу:</h3>
 <form>
-<div class="maintext">При работе в web-редакторах во избежание ручного ввода тегов можно использовать кнопки панели инструментов или <input width="100" type="text" /> </div>
-<button>Проверить</button>
+<div class="maintext">Атрибут, который задает расстояние между соседними ячейками таблицы, это – <input width="100" type="text" id="answer-field"/> </div>
+<button class="check" type="button" onclick="checkFieldValue('CELLSPACING')">Проверить</button>
+<p>&nbsp;</p>
 </form>
-</body>
+<div>
+<a class="next_task" href="t2.html">К предыдущему</a>
+<a class="next_task" href="t4.html">К следующему</a>
+</div>
 </body>
 </html>
