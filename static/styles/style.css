@@ -102,6 +102,26 @@ button
 	color:green;
 	background-color: lavender;
 }
+div.nav{
+    background-color: #E6E6FA;
+    display: table;
+    padding: 0 7px;
+    margin: 20px;
+    border-radius: 8px;
+}
+div.nav a{
+    display: inline-block;
+    padding: 6px 14px;
+    font-family: Helvetica, Arial;
+    text-decoration: none;
+}
+div.nav a:hover{
+    background-color: cornflowerblue;
+    color:white;
+}
+div.nav a.active{
+    background-color: cornflowerblue;
+}
 label{
 	display: table;
 	padding: 4px 20px;
