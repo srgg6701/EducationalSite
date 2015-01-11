@@ -11,7 +11,7 @@ function manageRightAnswers(){
             answers=answ;
         },
         getAnswers:function() {
-            console.log(answers);
+            //console.log(answers);
             return answers;
         }
     }
@@ -30,7 +30,9 @@ function removeResults(){
  * Вызывается кликом по ссылке "показать правильные ответы"
  */
 function showRight(){
-    var answers_block='<div id="right-results" class="box">';
+    var rId="right-results";
+    $('#'+rId).remove();
+    var answers_block='<div id="'+rId+'" class="box">';
     $(answ.getAnswers()).each(function(index,element){
         answers_block+='<div>'+element+'</div>';
     });
@@ -65,12 +67,14 @@ function checkRadios(){
  */
 function checkCheckBoxses(){
     var answers=[],
-        trues=$('label').has('input[type="checkbox"][value="true"]');
+        boxes=$('label').has('input[type="checkbox"]'),
+        trues=$(boxes).has('[value="true"]');
     $(trues).each(function(index,element){
         answers.push($.trim($(element).text()));
     });
+    //console.log($(trues));
     // построить блок с результатами
-    buildResults(answers,trues.length!=$(trues).has(':checked').length);
+    buildResults(answers,trues.length!=$(boxes).has(':checked').length);
 }
 /**
  * Проверить ответ (текстовое поле)
